@@ -1,14 +1,14 @@
-h = 11;
+h = 10;
 w = 12;
-d = 10;
+d = 9;
 
 // inner box wall thickness
-th = 2;
+th = 1.5;
 // inner box depth
-id = 8;
+id = 6;
 
 // circle radius
-r = 7.5625;
+r = 13;
 
 
 difference() {
@@ -17,7 +17,7 @@ difference() {
 
     union() {
         // inner cube to remove
-        translate([2, 2, 0])
+        translate([th, th, 0])
         cube([w - 2 * th, h - 2 * th, id]);
     }
     
